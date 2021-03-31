@@ -4,29 +4,40 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
+
+
 import './App.css';
 
 function App() {
   return (
     <main>
-      <MobileHeader/>
-      <div className="main">
-        <Header/>
-          <Switch>
-            <Route 
-              exact path="/"
-              render={() => <TopArtists/>}
-            /> 
-            <Route 
-              exact path="/about"
-              render={() => <TopArtists/>}
-            /> 
-            <Route 
-              exact path="/following"
-              render={() => <Following/>}
-            /> 
-          </Switch>
-      </div>
+    {/* <MobileHeader/> */}
+      <Header/>
+        <Switch>
+          <Route 
+            exact path="/"
+            render={() => <Home/>}
+          /> 
+          <Route 
+            exact path="/about"
+            render={() => <About/>}
+          /> 
+          {/* <Route 
+            exact path="/resume"
+            render={() => <Resume/>}
+          /> 
+          <Route 
+            exact path="/:slug"
+            render={() => <Project/>}
+          />  */}
+        </Switch>
+        <Footer/>
     </main>
 
   );
