@@ -5,52 +5,6 @@ import logo from "../images/logo.jpg";
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-const customStyles = {
-  overlay: {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  content: {
-    position: "absolute",
-    top: "0",
-    left: "0",
-    right: "0",
-    bottom: "0",
-    background: "rgb(239,238,233, 0.9)",
-    overflow: "auto",
-    WebkitOverflowScrolling: "touch",
-    borderRadius: "4px",
-    outline: "none",
-    padding: "20px",
-  },
-}
-
-const customTwoStyles = {
-  overlay: {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  content: {
-    position: "absolute",
-    top: "0",
-    left: "0",
-    right: "0",
-    bottom: "0",
-    background: "rgb(239,238,233, 0.9)",
-    overflow: "auto",
-    WebkitOverflowScrolling: "touch",
-    borderRadius: "4px",
-    outline: "none",
-    padding: "20px",
-  },
-}
-
 const Nav = styled.nav`
 background-color: transparent;
 list-style-type: none;
@@ -58,8 +12,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 0px auto;
-padding-top: 50px;
-padding-bottom: 10px;
+padding: 50px 40px 10px 40px;
 transition: background 0.5s;
 max-width: 1300px;
 button, a {
@@ -79,16 +32,14 @@ button, a {
   }
   .mobile-menu {
     display: none;
-    font-family: NeueMontrealLight;
   }
   .nav-link {
-    font-family: NeueMontrealLight;
-    font-size: 30px;
+    font-size: 20px;
   }
   .heading {
-    height: 90px;
+    height: 50px;
     img {
-      height: 90px;
+      height: 50px;
 
     }
   }
@@ -127,9 +78,9 @@ const NavBar = () => {
         <a href="/about" className="nav-link">
           About
         </a>
-        <button className="nav-link">
+        <a className="nav-link" href="/#projects">
           Projects
-        </button>
+        </a>
         <a className="nav-link" href="mailto:tiffnbouchard@gmail.com">
           Contact
         </a>

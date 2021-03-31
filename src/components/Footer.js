@@ -5,10 +5,10 @@ const FooterContainer = styled.footer`
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin: 40px;
+  padding: 40px;
+
     a {
       padding: 10px;
-      font-family: NeueMontreal;
       background: none;
       font-size: 15px;
       border: none;

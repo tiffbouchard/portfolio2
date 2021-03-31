@@ -5,6 +5,7 @@ import styled from "styled-components"
 import proj from "../images/spotify.png"
 import proj2 from "../images/project_two.png"
 import proj3 from "../images/project_three.PNG"
+import proj4 from "../images/logo.jpg"
 
 const MainProjectsContainer = styled.div`
   max-width: 1300px;
@@ -13,6 +14,7 @@ const MainProjectsContainer = styled.div`
   grid-gap: 20px;
   gap: 20px;
   width: 100%;
+  padding-bottom: 50px;
   a {
     position: relative;
     height: 350px;
@@ -50,13 +52,12 @@ const Overlay = styled.div`
   background-color: rgba(250, 250, 250, 0.5);
   backdrop-filter: blur(3px);
   z-index: 10;
-  font-family: NeueMontreal;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0px;
   }
   p {
@@ -65,105 +66,6 @@ const Overlay = styled.div`
 }
 `
 
-const ProjectContainerOne = styled.div`
-  display: flex;
-  margin: 40px;
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    h4 {
-      font-family: NeueMontreal;
-      font-size: 25px;
-      margin-bottom: 20px;
-    }
-    div {
-      margin-bottom: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      span {
-        font-family: NeueMontreal;
-        font-size: 12px;
-        padding: 5px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        border: solid 1px;
-      }
-    }
-    p {
-      font-family: NeueMontreal;
-      text-align: justify;
-    }
-  }
-  img {
-    height: 400px;
-    margin-left: 30px;
-  }
-  @media (max-width: 1000px) {
-    display: block;
-    flex-wrap: wrap;
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-left: 0px;
-    }
-  }
-`
-
-const ProjectContainerTwo = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
-  margin: 60px 40px;
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    h4 {
-      font-family: NeueMontreal;
-      font-size: 25px;
-      margin-bottom: 20px;
-    }
-    div {
-      margin-bottom: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      span {
-        font-family: "NeueMontreal";
-        font-size: 11px;
-        padding: 5px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        border: solid 1px;
-        flex-wrap: wrap;
-      }
-    }
-    p {
-      font-family: "NeueMontreal";
-      text-align: justify;
-    }
-  }
-  img {
-    margin-right: 30px;
-    max-width: 600px;
-  }
-  @media (max-width: 1000px) {
-    display: block;
-    flex-wrap: wrap;
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-right: 0px;
-    }
-  }
-`
-
-
-
 const ProjectsSection = props => {
   React.useEffect(() => {
     AOS.init()
@@ -171,13 +73,13 @@ const ProjectsSection = props => {
 
   return (
     <section id="projects" data-aos="fade-up"
-    data-aos-delay="300"
+    data-aos-delay="250"
     data-aos-duration="1000">
       <MainProjectsContainer>
       <a href="#">
         <Overlay className="overlay">
           <h1>Artist Explorer</h1>
-          <p>Development | Design</p>
+          <p>Development / Web Design</p>
         </Overlay>
         <div className="img-container">
           <img className="logo" src={proj}/>
@@ -187,7 +89,7 @@ const ProjectsSection = props => {
         <div className="img-container">
           <Overlay className="overlay">
             <h1>Forkpitch</h1>
-            <p>Development | Design</p>
+            <p>Development / Web Design</p>
           </Overlay>
           <img className="image" src={proj2}/>
         </div>
@@ -195,17 +97,48 @@ const ProjectsSection = props => {
       <a href="#">
         <Overlay className="overlay">
           <h1>Bidgala</h1>
-          <p>Development | Design</p>
+          <p>Development / Web Design</p>
         </Overlay>
         <div className="img-container">
           <img className="logo" src={proj3}/>
         </div>
       </a>
       <a href="#">
+        <Overlay className="overlay">
+          <h1>Personal Branding</h1>
+          <p>Branding / Logo Design / Development / Web Design</p>
+        </Overlay>
         <div className="img-container">
-          {/* <img src={proj}/> */}
+          <img className="image" src={proj4}/>
         </div>
       </a>
+      {/* <a href="#">
+        <Overlay className="overlay">
+          <h1>Capital Blockchain</h1>
+          <p>Logo Design</p>
+        </Overlay>
+        <div className="img-container">
+          <img className="image" src={proj4}/>
+        </div>
+      </a>
+      <a href="#">
+        <Overlay className="overlay">
+          <h1>Movie Seating</h1>
+          <p>UX + UI / Branding / Logo Design</p>
+        </Overlay>
+        <div className="img-container">
+          <img className="image" src={proj4}/>
+        </div>
+      </a>
+      <a href="#">
+        <Overlay className="overlay">
+          <h1>Graphics Branding Project</h1>
+          <p>Branding / Visual Design / UI</p>
+        </Overlay>
+        <div className="img-container">
+          <img className="image" src={proj4}/>
+        </div>
+      </a> */}
       </MainProjectsContainer>
     </section>
   )

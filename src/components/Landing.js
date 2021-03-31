@@ -10,11 +10,8 @@ const AboutElementsContainer = styled.div`
   align-items: center;
   padding: 50px 0px 100px 0px;
   p {
-    font-family: NeueMontrealLight;
-    font-size: 40px;
-    @media (max-width: 400px) {
-      font-size: 30px;
-    }
+    font-size: 30px;
+    text-align: center;
   }
 `
 

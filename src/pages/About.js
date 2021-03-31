@@ -7,15 +7,19 @@ import img4 from "../images/about/IMG_4088.jpg";
 import img5 from "../images/about/IMG_4387.jpg";
 
 const AboutContainer = styled.div`
-  padding-top: 40px;
-  font-family: NeueMontreal;
+  padding: 40px;
   max-width: 1300px;
   margin: 0px auto;
   .main-info {
     display: flex;
   }
+  .main-img {
+    position: relative;
+  }
   .images {
-    height: 500px;
+    height: 400px;
+  }
+  .images.one {
     margin: 0 0 60px 60px;
   }
   .more-info {
@@ -31,7 +35,8 @@ const AboutContainer = styled.div`
     }
     .skills {
       ul {
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
       }
       li {
         list-style: none;
@@ -45,18 +50,24 @@ const IndexPage = props => {
   return (
     <div id="top">
       <AboutContainer>
-        <h1>About</h1>
-        <div className="main-info">
-          <p>
-              Hey, I'm Tiffany and I'm a frontend developer + designer from Toronto currently working on <a href="https://bidgala.com"><u>Bidgala</u></a>.
-              <br />
-              <br />
-              I've always been a visual person, from the way I learn best to my appreciation for visually pleasing things. I believe that 
-              <br />
-              <br />
-              Aside from development and design, I love travelling, music festivals, running, biking and baking.
-            </p>
-            <img className="images" src={img4}/>
+          <div className="main-img">
+            <div className="main-info">
+              <p>
+                <h2>Hey, I'm Tiffany and I'm a frontend developer + designer from Toronto currently working on <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer"><u>Bidgala</u></a>.</h2>
+                <br />
+                I've always been a visual person, from the way I learn best to my appreciation for visually pleasing things in everyday life. As long as I am creating, I am happy. I believe development and design are not mutually exclusive and knowledge and consideration of both is important in order to building amazing products. I am passionate about building things that make people's lives better while helping to bridge the gap between development and design. When I am not building something I love working on design projects, especially branding, packaging + UX/UI. 
+                <br />
+                <br />
+                In my free time I'm probably travelling, hitting up a music festival, running, biking or doing anything that involves food.
+              </p>
+              <img className="images one" src={img4}/>
+            </div>
+            <div>
+              <img className="images two"src={img1}/>
+              <img className="images three"src={img2}/>
+              <img className="images four"src={img3}/>
+              <img className="images five" src={img5}/>
+            </div>
           </div>
           < hr />
           <div className="more-info">
@@ -97,17 +108,13 @@ const IndexPage = props => {
             </div>
             <div>
               <h3>Connect</h3>
-              <a mailto="tiffnbouchard@gmail.com">tiffnbouchard@gmail.com</a>
+              <a href="mailto:tiffnbouchard@gmail.com">tiffnbouchard@gmail.com</a>
               <br />
               <a href="https://linkedin.com/in/tiffanybouchard">Linkedin</a>
-              <a href="https://linkedin.com/in/tiffanybouchard">Instagram</a>
+              <a href="https://github.com/tiffbouchard">Github</a>
+              <a href="https://behance.net/tiffanybouchard">Behance</a>
+              <a href="https://instagram.com/tiffbouchard">Instagram</a>
             </div>
-          </div>
-          <div>
-            <img className="images"src={img1}/>
-            <img className="images"src={img2}/>
-            <img className="images"src={img3}/>
-            <img className="images" src={img5}/>
           </div>
       </AboutContainer>
   </div>
