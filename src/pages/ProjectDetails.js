@@ -12,6 +12,7 @@ const Intro = styled.section`
 `
 
 const AdditionalSection = styled.section`
+  margin-top: 50px;
   width: 100%;
   img {
     width: 100%;
@@ -80,10 +81,11 @@ const ProjectDetails = props => {
         >
           <img src={project.header} alt="project header"/>
           <div className="info">
-            <p>Development / Web Design</p>
+            <p>{project.role}</p>
             <div>
-              <a href="https://github.com" target="_blank" rel="noreferrer">Code</a>
-              <a href="http://artist-explorer.herokuapp.com">Live Demo</a>
+              {project.links.map((link) => 
+                <a href={link.link} target="_blank" rel="noreferrer">{link.name}</a>
+              )}
             </div>
           </div>
         </header>
@@ -95,30 +97,35 @@ const ProjectDetails = props => {
           >
             <div className="left">
               <h2>About</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>{project.about}</p>
             </div>
-            <div className="right">
-              <h2>Tech Stack</h2>
-              <ul>
-                <li>HTML/CSS</li>
-                <li>React</li>
-                <li>Spotify Web API</li>
-              </ul>
-            </div>
+              {project.tech && 
+                <div className="right">
+                  <h2>Tech Stack</h2>
+                  <ul>
+                    {project.tech.map((item) => 
+                      <li>{item}</li>
+                    )}
+                  </ul>
+                </div>
+              }
           </Intro>
-          <AdditionalSection
-            data-aos="fade-up"
-            data-aos-delay="250"
-            data-aos-duration="1000"
-          >
-            <h2>Wireframes</h2>
-          </AdditionalSection>
-          <AdditionalSection>
-            <h2>Preview</h2>
-          </AdditionalSection>
-          <AdditionalSection>
-            <h2>Next Steps + Improvements</h2>
-          </AdditionalSection>
+          {project.sections.map((section) => 
+            <AdditionalSection
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="1000">
+              <h2>{section.title}</h2>
+              {section.images && section.images.map((img) => 
+                <img src={img.link} alt=""/>
+              )}
+              {section.content && section.content.map((con) => 
+              <li>{con}</li>
+              )}
+            </AdditionalSection>
+            
+          )}
+
         </main>
       </ProjectContainer>
     }
