@@ -62,7 +62,7 @@ const AboutContainer = styled.div`
       img {
         width: 100%;
         height: auto;
-        padding: 20px 60px;
+        margin: 20px 60px;
       }
       .images.one {
         margin: 0px;
