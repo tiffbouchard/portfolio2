@@ -60,7 +60,8 @@ const AboutContainer = styled.div`
     .main-info {
       flex-direction: column-reverse;
       img {
-        height: 100%;
+        width: 100%;
+        height: auto;
         padding: 20px 60px;
       }
       .images.one {
