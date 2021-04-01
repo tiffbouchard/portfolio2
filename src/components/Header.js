@@ -7,22 +7,21 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 
 const Nav = styled.nav`
-background-color: transparent;
 list-style-type: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 0px auto;
 padding: 50px 40px 10px 40px;
-transition: background 0.5s;
 max-width: 1300px;
 button, a {
+      font-family: degular, sans-serif;
+      font-weight: 300;
+      background-color: white;
       padding: 10px;
-      background: none;
-      font-size: 20px;
+      font-size: 25px;
       border: none;
       color: black;
-      transition: 0.5s;
       text-decoration: none;
       &:hover {
         cursor: pointer;
@@ -35,7 +34,7 @@ button, a {
     display: none;
   }
   .nav-link {
-    font-size: 20px;
+    font-size: 25px;
   }
   .heading {
     height: 50px;
@@ -52,12 +51,6 @@ button, a {
     .mobile-menu {
       display: flex;
     }
-  }
-
-  @media (max-width: 460px) {
-   .heading {
-    font-size: 30px;
-    text-align: left;
   }
 }
 }

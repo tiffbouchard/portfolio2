@@ -14,6 +14,15 @@ const AboutContainer = styled.div`
   margin: 0px auto;
   .main-info {
     display: flex;
+    p {
+      padding-bottom: 20px;
+      h2 {
+        a {
+          font-family: degular, sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
   }
   .main-img {
     position: relative;
@@ -44,6 +53,18 @@ const AboutContainer = styled.div`
       li {
         list-style: none;
         font-size: 13px;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    .main-info {
+      flex-direction: column-reverse;
+      img {
+        height: 100%;
+        padding: 20px 60px;
+      }
+      .images.one {
+        margin: 0px;
       }
     }
   }
@@ -83,7 +104,7 @@ const IndexPage = props => {
           <div className="more-info">
             <div>
               <h3>Education</h3>
-              <small><b>University of Toronto</b></small>
+              <small>University of Toronto</small>
               <small>Bachelor of Arts (Hons)</small>
               <small>Philosophy + Criminology</small>
               <small>2016-2020</small>

@@ -1,8 +1,19 @@
-* {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+@import url("https://use.typekit.net/bjl0les.css");
+
+h1, h2, h3, h4, h5 {
+  font-family: degular, sans-serif;
+  font-weight: 400;
+}
+
+
+p, a, small, button, li {
+  font-family: Helvetica, sans-serif;
   font-weight: lighter;
 }
+
 
 html, body {
   margin: 0px;
 }
+
+

@@ -9,13 +9,31 @@ const Intro = styled.section`
   grid-template-columns: 2fr 1fr;
   gap: 70px;
   margin-top: 30px;
+  @media (max-width: 725px) {
+    display: block;
+  }
 `
 
 const AdditionalSection = styled.section`
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2, li {
+    text-align: left;
+    width: 100%;
+  }
   img {
     width: 100%;
+  }
+  #center {
+    width: 60%;
+    margin: 0px auto;
+    @media (max-width: 725px) {
+      width: 100%;
+    }
   }
 `
 
@@ -83,7 +101,7 @@ const ProjectDetails = props => {
           <div className="info">
             <p>{project.role}</p>
             <div>
-              {project.links.map((link) => 
+              {project.links && project.links.map((link) => 
                 <a href={link.link} target="_blank" rel="noreferrer">{link.name}</a>
               )}
             </div>
@@ -117,7 +135,7 @@ const ProjectDetails = props => {
               data-aos-duration="1000">
               <h2>{section.title}</h2>
               {section.images && section.images.map((img) => 
-                <img src={img.link} alt=""/>
+                <img src={img.link} alt="" id={img.id && img.id}/>
               )}
               {section.content && section.content.map((con) => 
               <li>{con}</li>

@@ -128,7 +128,7 @@ const Resume = props => {
             <img src={logo} alt="logo"/>
             <h2>Tiffany Bouchard</h2>
             <p className="heading">Frontend Developer</p>
-            <small className="bio">I am driven by curiosity and I love solving tough problems. I am passionate about building things that help people with seamless design.</small>
+            <small className="bio">I am driven by curiosity and I love solving tough problems. I am passionate about building things that help people while applying seamless design.</small>
           </div>
           <div className="contact">
             <small><a href="mailto:tiffnbouchard@gmail.com">tiffnbouchard@gmail.com</a></small>
@@ -181,23 +181,18 @@ const Resume = props => {
               <h4>Fullstack Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
               <small>Montreal QC ∙ Sept 2020-Present</small>
               <ul>
-                <li>Responsible for design & development of key pages (homepage, profile, product page) and implementing responsive design using HTML, CSS, Bootstrap & JavaScript/jQuery</li>
-                <li>Develop back-end profile features (CRUD for profile
-                  sections, uploading images, chat, follow/followers) using Python and Django ORM for PostgreSQL</li>
-                <li>Ensure scalability and optimization of code for 400+
-                  marketplace users</li>
-                <li>Participate in peer code review, utilize git versioning and Jira scrum + kanban workflow</li>
+                <li>Tech Used: HTML/CSS, Bootstrap, JavaScript/jQuery, React, Python, Django, PostgreSQL</li>
+                <li>Designed and developed Profile, Product, Sell and Landing pages</li>
+                <li>Responsible for maintaining responsive design and implementing UX design principles</li>
+                <li>Designed and developed backend for Profile and Payments</li>
+                <li>Implemented Stripe Connect for marketplace payments, generating over 1k in revenue</li>
+                <li>Ensure scalability and optimization of code for 1000+ users</li>
+                <li>Participate in startup advisory meetings and marketing strategizing</li>
               </ul>
             </SubSection>
             <SubSection>
               <h4>Freelance Developer + Graphic Designer</h4>
               <small>Toronto ON ∙ Jan 2021-Present</small>
-              <ul>
-                <li>Design & develop eCommerce store for Toronto-based clothing brand in preparation for launch</li>
-                <li>Design & develop eCommerce store for Toronto-based clothing brand in preparation for launch</li>
-                <li>Design & develop eCommerce store for Toronto-based clothing brand in preparation for launch</li>
-                <li>Design & develop eCommerce store for Toronto-based clothing brand in preparation for launch</li>
-              </ul>
             </SubSection>
           </div>
         </section>

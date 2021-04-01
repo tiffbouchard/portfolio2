@@ -43,18 +43,72 @@ module.exports = {
     "title": "Forkpitch",
     "header": "/images/project_two/header.png",
     "role": "Development / Web Design",
-    "links": {
-      "Code": "https://github.com/tiffbouchard/forkpitch",
-      "Live Demo": "http://forkpitch.herokuapp.com"
-    }
+    "links": [
+      { "name": "Code",
+        "link": "https://github.com/tiffbouchard/music-review-app",
+      },
+      { "name": "Live Demo",
+        "link": "http://forkpitch.herokuapp.com",
+      }
+    ],
+    "about": "This app uses a third-party API that scrapes Pitchfork review data and lets you to leave your opinions on album reviews. Using Google OAuth you can login and leave a review.",
+    "tech": ["HTML/CSS", "Javascript", "MongoDB", "Node.js"],
+    "sections": [
+      {
+        "title": "Wireframes",
+        "images": [
+          {
+            "description" : "",
+            "link" : "/images/project_two/wireframe.png"
+          }
+        ],
+      },
+      {
+        "title": "Preview",
+        "images": [
+          {
+            "description" : "",
+            "link" : "/images/project_two/preview.png"
+          }
+        ],
+      },
+      {
+        "title": "Next Steps + Improvements",
+        "content": ["AAU I want to be able to add reviews to My Reviews page through an ADD button, this page allows for users to track album reviews they have commented and/or ones they would like to track", "AAU I want to be able to like/dislike a critic review or user review, when the buttons are clicked again they decrease the amount of likes/dislikes", "AAU/AAV I want to be able to view the amount of like/dislikes", "AAU I want to be able to reply to other user reviews", "Make search better by implementing sort functionality, right now the search returns results randomly and in no specific order, sometimes the least relevant result will be returned first which does not make sense if a user has entered a very specific search", "The navigation bar is not accessible from a mobile device, make it accessible through a drop-down menu", "Have feedback for loading when searching"],
+      }
+    ]
   },
   "bidgala": {
     "title": "Bidgala",
     "header": "/images/project_three/header.png",
     "role": "Development / Web Design",
-    "links": {
-      "Live": "https://bidgala.com"
-    }
+    "links": [
+      { "name": "Live Site",
+        "link": "http://bidgala.com",
+      }
+    ],
+    "about": "Bidgala is a global dynamic marketplace and visual arts community putting artists and their stories at the forefront. Our goal is to become the go-to platform for individuals looking to connect with the art-world. With Bidgala, I worked to develop and design some key features. I worked on the frontend for products and profile pages and the backend for payments using Stripe Connect. See below for features I worked on independently.",
+    "tech": ["HTML/CSS", "Bootstrap", "Javascript/jQuery", "React", "PostgreSQL", "Django/Python" ],
+    "sections": [
+      {
+        "title": "My Work",
+        "images": [
+          {
+            "description" : "",
+            "link" : "/images/project_three/mockup_web.png"
+          },
+          {
+            "description" : "",
+            "id": "center",
+            "link" : "/images/project_three/mockup_mobile.png"
+          },
+          {
+            "description" : "",
+            "link" : "/images/project_three/more_web.png"
+          },
+        ],
+      }
+    ]
   },
   "personal-branding": {
     "title": "Personal Branding",
@@ -63,7 +117,7 @@ module.exports = {
       { "name": "Code",
         "link": "https://github.com/tiffbouchard/portfolio-v2",
       },
-      { "name": "Live Demo",
+      { "name": "Live Site",
         "link": "https://tiffbouchard.com",
       }
     ],

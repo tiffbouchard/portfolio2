@@ -10,10 +10,11 @@ const AboutElementsContainer = styled.div`
   align-items: center;
   padding: 50px 0px 100px 0px;
   margin: 0px auto;
-  p {
+  h1 {
     font-size: 30px;
+    font-weight: 300;
     text-align: center;
-    margin: 0px 40px;
+    margin: 20px 40px;
   }
 `
 
@@ -30,9 +31,9 @@ const LandingSection = props => {
           data-aos-delay="250"
           data-aos-duration="1000"
         >
-          <p>
+          <h1>
             Frontend developer + designer focused on creating seamless user experiences
-          </p>
+          </h1>
         </AboutElementsContainer>
       </div>
     </section>
