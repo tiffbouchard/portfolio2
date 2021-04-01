@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import logo from "../images/logo.jpg";
+import MobileMenu from "../components/MobileMenu";
 
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -63,15 +64,25 @@ button, a {
 `
 
 const NavBar = () => {
+  const [show, setShow] = React.useState(false);
+
   React.useEffect(() => {
     AOS.init()
   })
 
+  const showMenu = () => {
+    setShow(!show);
+  }
+
   return (
     <Nav>
+      <MobileMenu
+        show={show}
+        showMenu={showMenu}
+      />
       <div>
         <a className="heading" href="/">
-          <img src={ logo }/>
+          <img src={ logo } alt="logo"/>
         </a>
       </div>
       <div>
@@ -90,6 +101,7 @@ const NavBar = () => {
         <button
           className="mobile-menu"
           id="menu-modal"
+          onClick={showMenu}
         >
           Menu
         </button>

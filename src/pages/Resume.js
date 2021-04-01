@@ -113,7 +113,7 @@ const SubSection = styled.div`
 const Button = styled.a`
   background-color: white;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 13px;
   margin-top: 30px;
 `
@@ -125,7 +125,7 @@ const Resume = props => {
         <div>
           <Button href="/">Home</Button>
           <div>
-            <img src={logo}/>
+            <img src={logo} alt="logo"/>
             <h2>Tiffany Bouchard</h2>
             <p className="heading">Frontend Developer</p>
             <small className="bio">I am driven by curiosity and I love solving tough problems. I am passionate about building things that help people with seamless design.</small>
@@ -138,16 +138,16 @@ const Resume = props => {
           </div>
         </div>
         <div className="socials">
-          <a href="http://github.com/tiffbouchard" target="_blank">
+          <a href="http://github.com/tiffbouchard" target="_blank" rel="noreferrer">
             Github
           </a>
-          <a href="http://linkedin.com/in/tiffanybouchard" target="_blank">
+          <a href="http://linkedin.com/in/tiffanybouchard" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a href="http://behance.net/tiffanybouchard" target="_blank">
+          <a href="http://behance.net/tiffanybouchard" target="_blank" rel="noreferrer">
             Behance
           </a>
-          <a href="http://instagram.com/tiffbouchard" target="_blank">
+          <a href="http://instagram.com/tiffbouchard" target="_blank" rel="noreferrer">
             Instagram
           </a>
         </div>
@@ -178,7 +178,7 @@ const Resume = props => {
           <div>
             <h2>Experience</h2>
             <SubSection>
-              <h4>Fullstack Developer ∙ <a href="https://instagram.com/bidgala" target="_blank">Bidgala</a></h4>
+              <h4>Fullstack Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
               <small>Montreal QC ∙ Sept 2020-Present</small>
               <ul>
                 <li>Responsible for design & development of key pages (homepage, profile, product page) and implementing responsive design using HTML, CSS, Bootstrap & JavaScript/jQuery</li>

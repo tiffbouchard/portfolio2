@@ -39,16 +39,16 @@ const Footer = () => {
         </a>
       </div>
       <div className="socials">
-        <a href="http://github.com/tiffbouchard" target="_blank">
+        <a href="http://github.com/tiffbouchard" target="_blank" rel="noreferrer">
           Github
         </a>
-        <a href="http://linkedin.com/in/tiffanybouchard" target="_blank">
+        <a href="http://linkedin.com/in/tiffanybouchard" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
-        <a href="http://behance.net/tiffanybouchard" target="_blank">
+        <a href="http://behance.net/tiffanybouchard" target="_blank" rel="noreferrer">
           Behance
         </a>
-        <a href="http://instagram.com/tiffbouchard" target="_blank">
+        <a href="http://instagram.com/tiffbouchard" target="_blank" rel="noreferrer">
           Instagram
         </a>
       </div>

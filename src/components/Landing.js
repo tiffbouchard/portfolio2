@@ -13,6 +13,7 @@ const AboutElementsContainer = styled.div`
   p {
     font-size: 30px;
     text-align: center;
+    margin: 0px 40px;
   }
 `
 

@@ -1,10 +1,12 @@
 import React from "react"
 import styled from "styled-components";
-import img1 from "../images/about/IMG_0088.JPG";
-import img2 from "../images/about/IMG_3632.jpg";
+// import img1 from "../images/about/IMG_0088.JPG";
+// import img2 from "../images/about/IMG_3632.jpg";
 import img3 from "../images/about/IMG_3942.jpg";
-import img4 from "../images/about/IMG_4088.jpg";
-import img5 from "../images/about/IMG_4387.jpg";
+// import img4 from "../images/about/IMG_4088.jpg";
+// import img5 from "../images/about/IMG_4387.jpg";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const AboutContainer = styled.div`
   padding: 40px;
@@ -24,11 +26,12 @@ const AboutContainer = styled.div`
   }
   .more-info {
     padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     a {
       font-size: 13px;
     }
-    display: flex;
-    justify-content: space-between;
     div {
       display: flex;
       flex-direction: column;
@@ -47,9 +50,17 @@ const AboutContainer = styled.div`
 `
 
 const IndexPage = props => {
+  React.useEffect(() => {
+    AOS.init()
+  })
+
   return (
     <div id="top">
-      <AboutContainer>
+      <AboutContainer
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-duration="1000"
+      >
           <div className="main-img">
             <div className="main-info">
               <p>
@@ -60,7 +71,7 @@ const IndexPage = props => {
                 <br />
                 In my free time I'm probably travelling, hitting up a music festival or concert, running, biking or doing anything that involves food.
               </p>
-              <img className="images one"src={img3}/>
+              <img className="images one"src={img3} alt=""/>
             </div>
             {/* <div>
               <img className="images two"src={img1}/>
@@ -109,10 +120,10 @@ const IndexPage = props => {
               <h3>Connect</h3>
               <a href="mailto:tiffnbouchard@gmail.com">tiffnbouchard@gmail.com</a>
               <br />
-              <a target="_blank" href="https://linkedin.com/in/tiffanybouchard">Linkedin</a>
-              <a target="_blank" href="https://github.com/tiffbouchard">Github</a>
-              <a target="_blank" href="https://behance.net/tiffanybouchard">Behance</a>
-              <a target="_blank" href="https://instagram.com/tiffbouchard">Instagram</a>
+              <a target="_blank" href="https://linkedin.com/in/tiffanybouchard" rel="noreferrer">Linkedin</a>
+              <a target="_blank" href="https://github.com/tiffbouchard" rel="noreferrer">Github</a>
+              <a target="_blank" href="https://behance.net/tiffanybouchard" rel="noreferrer">Behance</a>
+              <a target="_blank" href="https://instagram.com/tiffbouchard" rel="noreferrer">Instagram</a>
             </div>
           </div>
       </AboutContainer>

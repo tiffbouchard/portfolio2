@@ -78,40 +78,40 @@ const ProjectsSection = props => {
     data-aos-delay="250"
     data-aos-duration="1000">
       <MainProjectsContainer>
-      <a href="#">
+      <a href="/artist-explorer">
         <Overlay className="overlay">
           <h1>Artist Explorer</h1>
           <p>Development / Web Design</p>
         </Overlay>
         <div className="img-container">
-          <img className="logo" src={proj}/>
+          <img className="logo" src={proj} alt="Artist Explorer"/>
         </div>
       </a>
-      <a href="#">
+      <a href="/forkpitch">
         <div className="img-container">
           <Overlay className="overlay">
             <h1>Forkpitch</h1>
             <p>Development / Web Design</p>
           </Overlay>
-          <img className="image" src={proj2}/>
+          <img className="image" src={proj2} alt="Forkpitch"/>
         </div>
       </a>
-      <a href="#">
+      <a href="/personal-branding">
         <Overlay className="overlay">
           <h1>Personal Branding</h1>
           <p>Branding / Logo Design / Development / Web Design</p>
         </Overlay>
         <div className="img-container">
-          <img className="image" src={proj4}/>
+          <img className="image" src={proj4} alt="Personal Branding"/>
         </div>
       </a>
-      <a href="#">
+      <a href="/bidgala">
         <Overlay className="overlay">
           <h1>Bidgala</h1>
           <p>Development / Web Design</p>
         </Overlay>
         <div className="img-container">
-          <img className="logo" src={proj3}/>
+          <img className="logo" src={proj3} alt="Bidgala"/>
         </div>
       </a>
       {/* <a href="#">

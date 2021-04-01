@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import {
   Switch,
   Route,
-  Redirect
 } from "react-router-dom";
 
 import Header from "./components/Header";
