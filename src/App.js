@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   Switch,
   Route,
@@ -9,35 +9,40 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Resume from "./pages/Resume";
+import ProjectDetails from "./pages/ProjectDetails";
 
 
 
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <main>
     {/* <MobileHeader/> */}
-      <Header/>
         <Switch>
           <Route 
-            exact path="/"
-            render={() => <Home/>}
-          /> 
-          <Route 
-            exact path="/about"
-            render={() => <About/>}
-          /> 
-          {/* <Route 
             exact path="/resume"
             render={() => <Resume/>}
-          /> 
-          <Route 
-            exact path="/:slug"
-            render={() => <Project/>}
-          />  */}
+            /> 
+          <Fragment>
+            <Header/>
+            <Route 
+              exact path="/"
+              render={() => <Home/>}
+            /> 
+            <Route 
+              exact path="/about"
+              render={() => <About/>}
+            /> 
+            <Route 
+              exact path="/:slug"
+              render={(props) => <ProjectDetails {...props}/>}
+            /> 
+            <Footer/>
+          </Fragment>
+
         </Switch>
-        <Footer/>
     </main>
 
   );

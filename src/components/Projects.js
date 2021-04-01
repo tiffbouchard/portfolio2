@@ -15,6 +15,8 @@ const MainProjectsContainer = styled.div`
   gap: 20px;
   width: 100%;
   padding-bottom: 50px;
+  margin: 0px auto;
+
   a {
     position: relative;
     height: 350px;
@@ -29,7 +31,7 @@ const MainProjectsContainer = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f5f5f5;
+      background-color: white;
       margin: 0px;
       .image {
         width: 100%;
@@ -96,20 +98,20 @@ const ProjectsSection = props => {
       </a>
       <a href="#">
         <Overlay className="overlay">
-          <h1>Bidgala</h1>
-          <p>Development / Web Design</p>
-        </Overlay>
-        <div className="img-container">
-          <img className="logo" src={proj3}/>
-        </div>
-      </a>
-      <a href="#">
-        <Overlay className="overlay">
           <h1>Personal Branding</h1>
           <p>Branding / Logo Design / Development / Web Design</p>
         </Overlay>
         <div className="img-container">
           <img className="image" src={proj4}/>
+        </div>
+      </a>
+      <a href="#">
+        <Overlay className="overlay">
+          <h1>Bidgala</h1>
+          <p>Development / Web Design</p>
+        </Overlay>
+        <div className="img-container">
+          <img className="logo" src={proj3}/>
         </div>
       </a>
       {/* <a href="#">

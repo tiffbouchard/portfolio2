@@ -2,14 +2,6 @@ body {
   background-color: #ffffff;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
 
 a {
   text-decoration: none;

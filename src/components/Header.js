@@ -84,7 +84,7 @@ const NavBar = () => {
         <a className="nav-link" href="mailto:tiffnbouchard@gmail.com">
           Contact
         </a>
-        <a className="nav-link" download>
+        <a className="nav-link" href="/resume">
           Resume
         </a>
         <button

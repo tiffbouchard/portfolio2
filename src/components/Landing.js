@@ -9,6 +9,7 @@ const AboutElementsContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 50px 0px 100px 0px;
+  margin: 0px auto;
   p {
     font-size: 30px;
     text-align: center;
