@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import logo from "../images/logo.jpg";
+import logo from "../images/logo.PNG";
 import MobileMenu from "../components/MobileMenu";
 
 import AOS from "aos"
@@ -12,7 +12,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 0px auto;
-padding: 50px 40px 10px 40px;
+padding: 50px 40px 10px 25px;
 max-width: 1300px;
 button, a {
       font-family: degular, sans-serif;
@@ -39,7 +39,7 @@ button, a {
   .heading {
     height: 50px;
     img {
-      height: 50px;
+      height: 80px;
 
     }
   }

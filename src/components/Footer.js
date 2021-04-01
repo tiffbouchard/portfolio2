@@ -11,11 +11,9 @@ const FooterContainer = styled.footer`
 
     a {
       padding: 10px;
-      background: none;
       font-size: 15px;
       border: none;
       color: black;
-      transition: 0.5s;
       text-decoration: none;
       &:hover {
       }

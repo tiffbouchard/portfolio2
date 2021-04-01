@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
-import logo from '../images/logo.jpg';
+import logo from '../images/logo.PNG';
 
 const ResumeContainer = styled.div`
   margin: 0px auto;

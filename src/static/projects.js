@@ -113,6 +113,9 @@ module.exports = {
   "personal-branding": {
     "title": "Personal Branding",
     "role": "Branding / Logo Design / Development / Web Design",
+    "header": "/images/project_four/header.png",
+    "about": "In this project, I created my personal brand.",
+    "tech": ["HTML/CSS", "styled-components", "React" ],
     "links": [
       { "name": "Code",
         "link": "https://github.com/tiffbouchard/portfolio-v2",
@@ -123,6 +126,31 @@ module.exports = {
     ],
     "sections": [
       {
+        "title": "",
+        "images": [
+          {
+            "description" : "",
+            "link" : "/images/project_four/branding_icons.png"
+          },
+          {
+            "description" : "",
+            "link" : "/images/project_four/branding_color.png"
+          },
+          {
+            "description" : "",
+            "link" : "/images/project_four/bizcard.png"
+          },
+          {
+            "description" : "",
+            "link" : "/images/project_four/branding_type.png"
+          },
+          {
+            "description" : "",
+            "link" : "/images/project_four/webmock.png"
+          }
+        ],
+      },
+      {
         "title": "Wireframes",
         "images": [
           {
@@ -131,19 +159,6 @@ module.exports = {
           }
         ],
       },
-      {
-        "title": "Preview",
-        "images": [
-          {
-            "description" : "",
-            "link" : "/images/project_one/preview_mockup.png"
-          }
-        ],
-      },
-      {
-        "title": "Next Steps + Improvements",
-        "content": ["Music player/display gets in the way on the mobile version", "Music will play over top of eachother if you are on the Random page and try to play two tracks at once", "Generate a random artist that is not based on your current taste, maybe also based on genre", "If searching get rid of highlighted link in sidebar", "Save an artist to a list", "Save tracks to a playlist", "Better error handling", "Dark mode could be cool", "Fix repeating components, make one", "Filter by genre", "Following doesn't show all artists, randomize page on each request"],
-      }
     ]
   }
 }

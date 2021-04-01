@@ -51,12 +51,25 @@ const ProjectContainer = styled.div`
       justify-content: space-between;
       align-items: baseline;
       padding: 0px 40px;
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        color: white;
+      }
       div {
         a {
           margin-right: 5px;
-          background-color: #f7f7f7;
-          padding: 10px;
+          background-color: black;
+          padding: 10px 20px;
           border-radius: 5px;
+          margin-bottom: 5px;
+          transition: 0.3s ease-in-out;
+          color: white;
+          &:hover {
+            transition: 0.3s ease-in-out;
+            background-color: #040404;
+          }
         }
       }
     }
@@ -100,7 +113,7 @@ const ProjectDetails = props => {
           <img src={project.header} alt="project header"/>
           <div className="info">
             <p>{project.role}</p>
-            <div>
+            <div className="links">
               {project.links && project.links.map((link) => 
                 <a href={link.link} target="_blank" rel="noreferrer">{link.name}</a>
               )}

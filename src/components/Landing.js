@@ -11,8 +11,8 @@ const AboutElementsContainer = styled.div`
   padding: 50px 0px 100px 0px;
   margin: 0px auto;
   h1 {
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 36px;
+    font-weight: 400;
     text-align: center;
     margin: 20px 40px;
   }

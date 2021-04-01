@@ -5,18 +5,19 @@ import styled from "styled-components"
 import proj from "../images/spotify.png"
 import proj2 from "../images/project_two.png"
 import proj3 from "../images/project_three.PNG"
-import proj4 from "../images/logo.jpg"
 
 const MainProjectsContainer = styled.div`
   max-width: 1300px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(550px,1fr));
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   gap: 20px;
   width: 100%;
   padding-bottom: 50px;
   margin: 0px auto;
-
+  @media (max-width: 725px) {
+    grid-template-columns: 1fr;
+  }
   a {
     position: relative;
     height: 350px;
@@ -102,7 +103,7 @@ const ProjectsSection = props => {
           <p>Branding / Logo Design / Development / Web Design</p>
         </Overlay>
         <div className="img-container">
-          <img className="image" src={proj4} alt="Personal Branding"/>
+          <img className="image" src="/images/project_four/bizcard.png" alt="Personal Branding"/>
         </div>
       </a>
       <a href="/bidgala">
