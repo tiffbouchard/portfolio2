@@ -65,6 +65,7 @@ const Overlay = styled.div`
   }
   p {
     margin: 2px;
+    text-align: center;
   }
 }
 `
