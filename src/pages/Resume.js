@@ -128,13 +128,13 @@ const Resume = props => {
             <img src={logo} alt="logo"/>
             <h2>Tiffany Bouchard</h2>
             <p className="heading">Frontend Developer</p>
-            <small className="bio">I am driven by curiosity and I love solving tough problems. I am passionate about building things that help people while applying seamless design.</small>
+            <small className="bio">I am driven by curiosity and I love a good challenge. I am  passionate about building things that make people’s lives better while implementing pixel-perfect and user-centered design.</small>
           </div>
           <div className="contact">
             <small><a href="mailto:tiffnbouchard@gmail.com">tiffnbouchard@gmail.com</a></small>
             <small><a href="http://tiffbouchard.com">tiffbouchard.com</a></small>
             <small><a href="tel:647-381-1429">647 381 1429</a></small>
-            <Button href="/">Download PDF</Button>
+            <Button href="/"><a href="/files/Bouchard_Resume.pdf" download>Download PDF</a></Button>
           </div>
         </div>
         <div className="socials">
@@ -182,11 +182,11 @@ const Resume = props => {
               <small>Montreal QC ∙ Sept 2020-Present</small>
               <ul>
                 <li>Tech Used: HTML/CSS, Bootstrap, JavaScript/jQuery, React, Python, Django, PostgreSQL</li>
+                <li>Founding developer responsible for building product from ground up and garnering over 1000 users</li>
                 <li>Designed and developed Profile, Product, Sell and Landing pages</li>
                 <li>Responsible for maintaining responsive design and implementing UX design principles</li>
                 <li>Designed and developed backend for Profile and Payments</li>
                 <li>Implemented Stripe Connect for marketplace payments, generating over 1k in revenue</li>
-                <li>Ensure scalability and optimization of code for 1000+ users</li>
                 <li>Participate in startup advisory meetings and marketing strategizing</li>
               </ul>
             </SubSection>

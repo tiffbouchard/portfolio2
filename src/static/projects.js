@@ -87,7 +87,7 @@ module.exports = {
         "link": "http://bidgala.com",
       }
     ],
-    "about": "Bidgala is a global dynamic marketplace and visual arts community putting artists and their stories at the forefront. Our goal is to become the go-to platform for individuals looking to connect with the art-world. With Bidgala, I worked to develop and design some key features. I worked on the frontend for products and profile pages and the backend for payments using Stripe Connect. See below for features I worked on independently.",
+    "about": "Bidgala is a global dynamic marketplace and visual arts community putting artists and their stories at the forefront. Our goal is to become the go-to platform for individuals looking to connect with the art-world. As a founding developer at Bidgala, I worked to develop and design some key features. I worked on the frontend for products and profile pages and the backend for payments using Stripe Connect. See below for features I worked on independently.",
     "tech": ["HTML/CSS", "Bootstrap", "Javascript/jQuery", "React", "PostgreSQL", "Django/Python" ],
     "sections": [
       {
