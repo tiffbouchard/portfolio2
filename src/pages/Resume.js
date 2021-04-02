@@ -134,7 +134,7 @@ const Resume = props => {
             <small><a href="mailto:tiffnbouchard@gmail.com">tiffnbouchard@gmail.com</a></small>
             <small><a href="http://tiffbouchard.com">tiffbouchard.com</a></small>
             <small><a href="tel:647-381-1429">647 381 1429</a></small>
-            <Button href="/files/Bouchard_Resume.pdf" download>Download PDF</Button>
+            <Button href="https://indd.adobe.com/view/2ac36af3-2482-4c04-b99a-5622bebffd5a" target="_blank">Download PDF</Button>
           </div>
         </div>
         <div className="socials">
