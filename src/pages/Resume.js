@@ -101,6 +101,10 @@ const SubSection = styled.div`
   display: flex;
   flex-direction: column;
   margin: 20px 0px;
+  a {
+    font-family: degular,sans-serif;
+    font-weight: 400;
+  }
   h4 {
     margin: 0px;
     padding: 0;
@@ -177,9 +181,19 @@ const Resume = props => {
           </div>
           <div>
             <h2>Experience</h2>
+             <SubSection>
+              <h4>UI/UX Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
+              <small>Montreal QC ∙ April 2020-Present</small>
+              <ul>
+                <li>Conduct user research, develop personas and user stories</li>
+                <li>Design wireframes and prototypes in Figma and conduct user testing</li>
+                <li>Facilitate handoff of designs to other developers</li>
+                <li>Transform designs into pixel-perfect code</li>
+              </ul>
+            </SubSection>
             <SubSection>
               <h4>Fullstack Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
-              <small>Montreal QC ∙ Sept 2020-Present</small>
+              <small>Montreal QC ∙ Sept 2020-April 2020</small>
               <ul>
                 <li>Tech Used: HTML/CSS, Bootstrap, JavaScript/jQuery, React, Python, Django, PostgreSQL</li>
                 <li>Founding developer responsible for building product from ground up and garnering over 1000 users</li>
