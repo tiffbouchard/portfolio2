@@ -32,7 +32,7 @@ const LandingSection = props => {
           data-aos-duration="1000"
         >
           <h1>
-            Frontend developer + designer focused on creating seamless user experiences
+            Developer + designer focused on creating seamless user experiences
           </h1>
         </AboutElementsContainer>
       </div>
