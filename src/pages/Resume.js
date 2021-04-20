@@ -131,7 +131,7 @@ const Resume = props => {
           <div>
             <img src={logo} alt="logo"/>
             <h2>Tiffany Bouchard</h2>
-            <p className="heading">Fullstack Developer</p>
+            <p className="heading">Frontend Developer</p>
             <small className="bio">I am driven by curiosity and I love a good challenge. I am  passionate about building things that make people’s lives better while implementing pixel-perfect and user-centered design.</small>
           </div>
           <div className="contact">
