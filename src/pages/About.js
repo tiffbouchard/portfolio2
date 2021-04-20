@@ -112,9 +112,14 @@ const IndexPage = props => {
             </div>
             <div>
               <h3>Experience</h3>
+              <small>UI/UX Developer</small>
+              <small>Bidgala</small>
+              <small>April 2021-Present</small>
+              <small>Montreal, QC</small>
+              <br />
               <small>Fullstack Developer</small>
               <small>Bidgala</small>
-              <small>September 2020-Present</small>
+              <small>September 2020-April 2021</small>
               <small>Montreal, QC</small>
             </div>
             <div className="skills">
