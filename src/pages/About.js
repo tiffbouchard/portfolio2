@@ -86,7 +86,7 @@ const IndexPage = props => {
           <div className="main-img">
             <div className="main-info">
               <p>
-                <h2>Hey, I'm Tiffany and I'm a frontend developer + designer from Toronto currently working on <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer"><u>Bidgala</u></a>.</h2>
+                <h2>Hey, I'm Tiffany and I'm a frontend developer + UX designer from Toronto currently working on <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer"><u>Bidgala</u></a>.</h2>
                 <br />
                 I've always been a visual person, from the way I learn best to my appreciation for visually pleasing things in everyday life. As long as I am creating, I am happy. I believe development and design are not mutually exclusive and knowledge and consideration of both is important in order to build amazing products. I am passionate about building things that make people's lives better while helping to bridge the gap between development and design. When I am not building something I love working on design projects, in particular, branding, packaging + UX/UI. 
                 <br />
