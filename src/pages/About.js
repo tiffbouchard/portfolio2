@@ -117,7 +117,7 @@ const IndexPage = props => {
               <small>July 2021-Present</small>
               <small>Toronto, ON</small>
               <br />
-              <small>Fullstack Developer</small>
+              <small>Full Stack Developer</small>
               <small>Bidgala</small>
               <small>September 2020-June 2021</small>
               <small>Montreal, QC</small>
