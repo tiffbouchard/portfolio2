@@ -182,11 +182,11 @@ const Resume = props => {
           <div>
             <h2>Experience</h2>
              <SubSection>
-              <h4>Fullstack Developer ∙ Avanade</h4>
+              <h4>Full Stack Developer ∙ Avanade</h4>
               <small>Toronto ON ∙ July 2020-Present</small>
             </SubSection>
             <SubSection>
-              <h4>Fullstack Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
+              <h4>Full Stack Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
               <small>Montreal QC ∙ Sept 2020-June 2021</small>
               <ul>
                 <li>Tech Used: HTML/CSS, Bootstrap, JavaScript/jQuery, React, Python, Django, PostgreSQL</li>
