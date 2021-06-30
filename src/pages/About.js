@@ -86,12 +86,12 @@ const IndexPage = props => {
           <div className="main-img">
             <div className="main-info">
               <p>
-                <h2>Hey, I'm Tiffany and I'm a frontend developer + UX designer from Toronto currently working on <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer"><u>Bidgala</u></a>.</h2>
+                <h2>Hey, I'm Tiffany and I'm a developer + designer from Toronto.</h2>
                 <br />
                 I've always been a visual person, from the way I learn best to my appreciation for visually pleasing things in everyday life. As long as I am creating, I am happy. I believe development and design are not mutually exclusive and knowledge and consideration of both is important in order to build amazing products. I am passionate about building things that make people's lives better while helping to bridge the gap between development and design. When I am not building something I love working on design projects, in particular, branding and packaging. 
                 <br />
                 <br />
-                In my free time I'm probably travelling, hitting up a music festival or concert, running, biking or doing anything that involves food.
+                In my free time I'm probably travelling, hitting up a music festival or concert, reading, running, biking or doing anything that involves food.
               </p>
               <img className="images one"src={img3} alt=""/>
             </div>
@@ -112,14 +112,14 @@ const IndexPage = props => {
             </div>
             <div>
               <h3>Experience</h3>
-              <small>UI/UX Developer</small>
-              <small>Bidgala</small>
-              <small>April 2021-Present</small>
-              <small>Montreal, QC</small>
+              <small>Full Stack Developer</small>
+              <small>Avanade</small>
+              <small>July 2021-Present</small>
+              <small>Toronto, ON</small>
               <br />
               <small>Fullstack Developer</small>
               <small>Bidgala</small>
-              <small>September 2020-April 2021</small>
+              <small>September 2020-June 2021</small>
               <small>Montreal, QC</small>
             </div>
             <div className="skills">
