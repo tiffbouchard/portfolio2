@@ -131,7 +131,7 @@ const Resume = props => {
           <div>
             <img src={logo} alt="logo"/>
             <h2>Tiffany Bouchard</h2>
-            <p className="heading">Frontend Developer</p>
+            <p className="heading">Fullstack Developer</p>
             <small className="bio">I am driven by curiosity and I love a good challenge. I am  passionate about building things that make people’s lives better while implementing pixel-perfect and user-centered design.</small>
           </div>
           <div className="contact">
@@ -182,18 +182,12 @@ const Resume = props => {
           <div>
             <h2>Experience</h2>
              <SubSection>
-              <h4>UI/UX Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
-              <small>Montreal QC ∙ April 2020-Present</small>
-              <ul>
-                <li>Conduct user research, develop personas and user stories</li>
-                <li>Design wireframes and prototypes in Figma and conduct user testing</li>
-                <li>Facilitate handoff of designs to other developers</li>
-                <li>Transform designs into pixel-perfect code</li>
-              </ul>
+              <h4>Fullstack Developer ∙ Avanade</h4>
+              <small>Toronto ON ∙ July 2020-Present</small>
             </SubSection>
             <SubSection>
               <h4>Fullstack Developer ∙ <a href="https://instagram.com/bidgala" target="_blank" rel="noreferrer">Bidgala</a></h4>
-              <small>Montreal QC ∙ Sept 2020-April 2020</small>
+              <small>Montreal QC ∙ Sept 2020-June 2021</small>
               <ul>
                 <li>Tech Used: HTML/CSS, Bootstrap, JavaScript/jQuery, React, Python, Django, PostgreSQL</li>
                 <li>Founding developer responsible for building product from ground up and garnering over 1000 users</li>
